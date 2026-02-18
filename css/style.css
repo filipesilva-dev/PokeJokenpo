@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo_h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.titulo_h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.circulo_grande {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #5ec8ff, #1b82c4);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    0 0 25px rgba(41, 165, 242, 0.6),
+    inset 0 0 15px rgba(255, 255, 255, 0.3);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.circulo_medio {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #dcdcdc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    inset 0 0 10px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.circulo_menor {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff6b6b, #c0392b);
+  box-shadow:
+    0 0 15px rgba(255, 0, 0, 0.7),
+    inset 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.combatente {
+  display: flex;
+  justify-content: center;
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: 120px;
+  color: black;
+  letter-spacing: 14px;
+
+}
+
+.botao {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.botao_conjunto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7689D;
+  border-radius: 50px;
+  padding: 2rem;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+}
+
+button {
+  width: 30rem;
+  height: 3rem;
+  background-color: cyan;
+  border: none;
+  border-radius: 2rem;
+  font-size: 32px;
+  font-family: 'Pokemon Solid', sans-serif;
+  letter-spacing: 5px;
+}
+
+button:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.regras {
+  width: 40rem;
+  margin: 4rem auto;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.regras_div {
+  display: grid;
+  width: 40rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow:
+      0 0 25px rgba(41, 165, 242, 0.6),
+      inset 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+
+  50% {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 40px rgba(41, 165, 242, 0.9),
+      inset 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 25px rgba(41, 165, 242, 0.6),
+      inset 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+}
