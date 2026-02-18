@@ -1,9 +1,9 @@
 # PokéJokenpo
 
-[![Online](https://img.shields.io/badge/online-✓-brightgreen)](https://filipesilva-dev.github.io/PokeJokenpo/)
-[![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?\&style=flat\&logo=html5\&logoColor=white)]
-[![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?\&style=flat\&logo=css3\&logoColor=white)]
-[![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?\&style=flat\&logo=javascript\&logoColor=black)]
+[![Online](https://img.shields.io/badge/Online-✓-brightgreen)](https://filipesilva-dev.github.io/PokeJokenpo/)
+[![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat\&logo=html5\&logoColor=white)]
+[![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=flat\&logo=css3\&logoColor=white)]
+[![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=flat\&logo=javascript\&logoColor=black)]
 
 Mini game inspirado em Pedra, Papel e Tesoura, desenvolvido com temática Pokémon, utilizando **HTML, CSS e JavaScript puro**.
 
