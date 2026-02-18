@@ -1,8 +1,13 @@
 # PokéJokenpo
 
-Mini game inspirado em Pedra, Papel e Tesoura, desenvolvido com temática Pokémon, utilizando HTML, CSS e JavaScript puro.
+[![Online](https://img.shields.io/badge/online-✓-brightgreen)](https://filipesilva-dev.github.io/PokeJokenpo/)
+[![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?\&style=flat\&logo=html5\&logoColor=white)]
+[![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?\&style=flat\&logo=css3\&logoColor=white)]
+[![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?\&style=flat\&logo=javascript\&logoColor=black)]
 
-Projeto criado em 1 dia com o objetivo de reforçar fundamentos de desenvolvimento front-end e organização de código.
+Mini game inspirado em Pedra, Papel e Tesoura, desenvolvido com temática Pokémon, utilizando **HTML, CSS e JavaScript puro**.
+
+Acesse a página online: [PokéJokenpo no GitHub Pages](https://filipesilva-dev.github.io/PokeJokenpo/)
 
 ---
 
@@ -14,7 +19,7 @@ O jogo é uma releitura de Pedra, Papel e Tesoura utilizando:
 * **Kartana** (Papel)
 * **Scizor** (Tesoura)
 
-O usuário escolhe um Pokémon, o computador gera uma escolha aleatória e o sistema determina o vencedor com base em regras condicionais.
+O usuário escolhe um Pokémon, o computador gera uma escolha aleatória, e o sistema determina o vencedor com base em regras condicionais.
 
 ---
 
@@ -41,14 +46,14 @@ Este projeto foi desenvolvido como prática intencional para:
 
 ## Decisões Técnicas
 
-* Uso de `DOMContentLoaded` para garantir carregamento correto do DOM.
-* Separação de responsabilidades em pastas (`css/`, `script/`, `img/`).
+* Uso de `DOMContentLoaded` para garantir carregamento correto do DOM
+* Separação de responsabilidades em pastas (`css/`, `script/`, `img/`)
 * Lógica isolada em funções:
 
   * `escolhaComputador()`
   * `resultado(usuario, computador)`
-* Uso de `Math.random()` para simulação de adversário.
-* Estrutura simples e clara para facilitar manutenção.
+* Uso de `Math.random()` para simulação de adversário
+* Estrutura simples e clara para facilitar manutenção
 
 ---
 
@@ -63,10 +68,10 @@ index.html
 
 ---
 
-## Como Executar
+## Como Executar Localmente
 
 ```bash
-git clone https://github.com/seu-usuario/pokejokenpo.git
+git clone https://github.com/filipesilva-dev/PokeJokenpo.git
 ```
 
 Abrir o arquivo `index.html` no navegador.
