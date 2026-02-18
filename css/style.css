@@ -9,12 +9,15 @@ body {
   height: 100%;
   width: 100%;
   background-color: antiquewhite;
+  overflow-x: hidden;
 }
 
 header {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 2rem;
   gap: 2rem;
@@ -25,30 +28,25 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .titulo_h1 {
   margin: 0px;
   padding: 0px;
-}
-
-.titulo_h2 {
-  margin: 0px;
-  padding: 0px;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
 .circulo_grande {
   height: 90px;
   width: 90px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #5ec8ff, #1b82c4);
+  background: radial-gradient(circle at 30% 30%, #5ec8ff, #29a5f2);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow:
-    0 0 25px rgba(41, 165, 242, 0.6),
-    inset 0 0 15px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 25px rgba(41, 165, 242, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.3);
   animation: pulse 2s infinite ease-in-out;
 }
 
@@ -56,40 +54,39 @@ header {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #ffffff, #dcdcdc);
+  background: radial-gradient(circle at 30% 30%, #ffffff, #e0e0e0);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow:
-    inset 0 0 10px rgba(0, 0, 0, 0.2),
-    0 0 10px rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 .circulo_menor {
   height: 35px;
   width: 35px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #ff6b6b, #c0392b);
-  box-shadow:
-    0 0 15px rgba(255, 0, 0, 0.7),
-    inset 0 0 8px rgba(255, 255, 255, 0.4);
+  background: radial-gradient(circle at 30% 30%, #ff6b6b, #ff0000);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7), inset 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
 .combatente {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-family: 'Pokemon Solid', sans-serif;
-  font-size: 120px;
+  font-size: clamp(2.5rem, 10vw, 6rem);
   color: black;
-  letter-spacing: 14px;
-
+  letter-spacing: clamp(4px, 1vw, 14px);
+  padding: 1rem;
 }
 
 .botao {
   display: flex;
-  justify-content: space-around;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 .botao_conjunto {
@@ -99,22 +96,29 @@ header {
   background-color: #F7689D;
   border-radius: 50px;
   padding: 2rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
 }
 
 img {
-  height: 400px;
-  width: 400px;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
 }
 
 button {
-  width: 30rem;
-  height: 3rem;
+  width: 100%;
+  max-width: 20rem;
+  height: 3.5rem;
   background-color: cyan;
   border: none;
   border-radius: 2rem;
-  font-size: 32px;
+  font-size: 1.8rem;
   font-family: 'Pokemon Solid', sans-serif;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  margin-top: 1rem;
 }
 
 button:hover {
@@ -123,44 +127,39 @@ button:hover {
 }
 
 .regras {
-  width: 40rem;
+  width: 90%;
+  max-width: 40rem;
   margin: 4rem auto;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.2rem;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .regras_div {
-  display: grid;
-  width: 40rem;
+  display: block;
+  width: 100%;
 }
 
 footer {
   display: flex;
-  flex-direction: row-reverse;
-  margin-right: 20px;
-  font-size: 22px;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.2rem;
 }
 
 @keyframes pulse {
   0% {
     transform: scale(1);
-    box-shadow:
-      0 0 25px rgba(41, 165, 242, 0.6),
-      inset 0 0 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 25px rgba(41, 165, 242, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.3);
   }
 
   50% {
     transform: scale(1.08);
-    box-shadow:
-      0 0 40px rgba(41, 165, 242, 0.9),
-      inset 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 40px rgba(41, 165, 242, 0.9), inset 0 0 20px rgba(255, 255, 255, 0.5);
   }
 
   100% {
     transform: scale(1);
-    box-shadow:
-      0 0 25px rgba(41, 165, 242, 0.6),
-      inset 0 0 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 25px rgba(41, 165, 242, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.3);
   }
 }
